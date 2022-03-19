@@ -1,0 +1,122 @@
+.admin {
+  width: 100%;
+  height: 100vh;
+}
+.admincontainer {
+  width: 100%;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 50px;
+}
+.adminleft {
+  flex: 0.3;
+  max-width: 300px;
+  background-color: rgb(241, 240, 237, 0.9);
+  height: auto;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 15px;
+}
+.adminleft__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.adminleft__header h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.adminleft__header span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.adminleft__header p {
+  font-size: 12px;
+}
+.adminCenter {
+  flex: 1;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  /* background-color: rgb(186, 196, 196); */
+}
+.adminCenter__container {
+  width: 200px;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+.manageitem {
+  width: 100%;
+  background-color: rgb(231, 220, 220);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  color: rgb(146, 141, 146);
+  border-radius: 5px;
+  font-size: 13px;
+  transition: all ease 0.4s;
+}
+.manageitem:hover {
+  color: rgb(32, 32, 32);
+}
+.adminleft__nav {
+  /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-left: 14px;
+  margin-top: 10px;
+}
+.navtab {
+  width: 270px;
+  height: 50px;
+  margin-bottom: 5px;
+  background-color: rgb(146, 141, 146);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: rgb(231, 220, 220);
+  cursor: pointer;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.3);
+  transition: all ease 0.4s;
+}
+.navtab:hover {
+  transform: translateY(6px);
+  color: black;
+}
+.active {
+  background-color: rgb(173, 85, 100);
+}
+@media screen and (max-width: 560px) {
+  .admincontainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .admincontainer {
+    flex-direction: column;
+  }
+  .adminCenter__container {
+    margin-left: 150px;
+    margin-top: 30px;
+  }
+  .adminleft {
+    max-width: 500px;
+  }
+  .navtab {
+    width: 100%;
+    margin-left: 90px;
+  }
+}
